@@ -1,4 +1,4 @@
-# SEDS_SNU
+# Solar-System-Objects-Classifier
 *** IMPORTANT INFORMATION ***
 
 --- Please read before running the code ---
