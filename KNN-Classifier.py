@@ -1,12 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created for ASTRA2019 VIT Vellore
-
-@Creators - SEDS SNU, Celestia Explora
-"""
-
 import pandas as pd
+import warnings
+
+#import warnings filter
+from warnings import simplefilter
+#ignore all future warnings
+simplefilter(action='ignore', category=FutureWarning)
 
 # define column names
 names = ['Name', 'Label', 'U-G', 'G-R', 'R-I', 'I-Z']
@@ -17,7 +15,7 @@ df.head()
 
 import numpy as np
 
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 
 
 
@@ -114,4 +112,3 @@ for i in range (0,len(XA)):
 print('Natural Satellites: ',NatSat)
 print('Comets: ',Com)
 print('Asteroids: ',Ast)
-
